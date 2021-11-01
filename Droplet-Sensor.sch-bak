@@ -1,0 +1,105 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Optical:BPX65 D?
+U 1 1 61860457
+P 3850 2900
+AR Path="/61860457" Ref="D?"  Part="1" 
+AR Path="/6185AC81/61860457" Ref="D2"  Part="1" 
+F 0 "D2" V 3754 3058 50  0000 L CNN
+F 1 "BPX65" V 3845 3058 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-18-2_Lens" H 3850 3075 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic1/00181579_0.pdf/BPX%2065,%20Lead%20(Pb)%20Free%20Product%20-%20RoHS%20Compliant.pdf" H 3800 2900 50  0001 C CNN
+	1    3850 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED LED?
+U 1 1 6186045D
+P 3150 2850
+AR Path="/6186045D" Ref="LED?"  Part="1" 
+AR Path="/6185AC81/6186045D" Ref="LED1"  Part="1" 
+F 0 "LED1" V 3189 2732 50  0000 R CNN
+F 1 "RED" V 3098 2732 50  0000 R CNN
+F 2 "" H 3150 2850 50  0001 C CNN
+F 3 "~" H 3150 2850 50  0001 C CNN
+	1    3150 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 3000 3150 3100
+Wire Wire Line
+	3150 3100 3500 3100
+Wire Wire Line
+	3850 3100 3850 3000
+Connection ~ 3500 3100
+Wire Wire Line
+	3500 3100 3850 3100
+$Comp
+L Device:R R?
+U 1 1 6186046F
+P 3150 2400
+AR Path="/6186046F" Ref="R?"  Part="1" 
+AR Path="/6185AC81/6186046F" Ref="R5"  Part="1" 
+F 0 "R5" H 3220 2446 50  0000 L CNN
+F 1 "330" H 3220 2355 50  0000 L CNN
+F 2 "" V 3080 2400 50  0001 C CNN
+F 3 "~" H 3150 2400 50  0001 C CNN
+	1    3150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2550 3150 2700
+$Comp
+L Device:R R?
+U 1 1 61860476
+P 3850 2400
+AR Path="/61860476" Ref="R?"  Part="1" 
+AR Path="/6185AC81/61860476" Ref="R6"  Part="1" 
+F 0 "R6" H 3920 2446 50  0000 L CNN
+F 1 "3k3" H 3920 2355 50  0000 L CNN
+F 2 "" V 3780 2400 50  0001 C CNN
+F 3 "~" H 3850 2400 50  0001 C CNN
+	1    3850 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2550 3850 2650
+Wire Wire Line
+	3150 2250 3150 2050
+Wire Wire Line
+	3150 2050 3500 2050
+Wire Wire Line
+	3850 2050 3850 2250
+Connection ~ 3500 2050
+Wire Wire Line
+	3500 2050 3850 2050
+Connection ~ 3850 2650
+Wire Wire Line
+	3850 2650 3850 2700
+Text HLabel 3500 1700 1    47   Input ~ 9
+5V
+Wire Wire Line
+	3500 1700 3500 2050
+Text HLabel 3500 3400 3    47   Input ~ 9
+GND
+Wire Wire Line
+	3500 3100 3500 3400
+Text HLabel 4550 2650 2    47   Input ~ 9
+SENSE
+Wire Wire Line
+	3850 2650 4550 2650
+$EndSCHEMATC

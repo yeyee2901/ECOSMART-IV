@@ -1,0 +1,236 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 618A1C16
+P 4800 2050
+F 0 "J1" H 5200 2400 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 5200 2300 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 4800 2050 50  0001 C CNN
+F 3 "~" H 4800 2050 50  0001 C CNN
+	1    4800 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 618A210A
+P 4250 1650
+F 0 "#PWR05" H 4250 1500 50  0001 C CNN
+F 1 "+5V" H 4265 1823 50  0000 C CNN
+F 2 "" H 4250 1650 50  0001 C CNN
+F 3 "" H 4250 1650 50  0001 C CNN
+	1    4250 1650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1650 4250 1950
+Wire Wire Line
+	4250 1950 4600 1950
+$Comp
+L Transistor_BJT:2N2219 Q1
+U 1 1 618A2DE3
+P 3200 2200
+F 0 "Q1" H 3390 2246 50  0000 L CNN
+F 1 "2N2219" H 3390 2155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 3400 2125 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 3200 2200 50  0001 L CNN
+	1    3200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED LED2
+U 1 1 618A3236
+P 3300 1650
+F 0 "LED2" V 3339 1532 50  0000 R CNN
+F 1 "YELLOW" V 3248 1532 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 3300 1650 50  0001 C CNN
+F 3 "~" H 3300 1650 50  0001 C CNN
+	1    3300 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 618A3E08
+P 3300 1250
+F 0 "R3" H 3370 1296 50  0000 L CNN
+F 1 "R" H 3370 1205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 3230 1250 50  0001 C CNN
+F 3 "~" H 3300 1250 50  0001 C CNN
+	1    3300 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1400 3300 1500
+$Comp
+L power:GND #PWR06
+U 1 1 618A57FA
+P 4250 2300
+F 0 "#PWR06" H 4250 2050 50  0001 C CNN
+F 1 "GND" H 4255 2127 50  0000 C CNN
+F 2 "" H 4250 2300 50  0001 C CNN
+F 3 "" H 4250 2300 50  0001 C CNN
+	1    4250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2150 4250 2150
+Wire Wire Line
+	4250 2150 4250 2300
+$Comp
+L power:+5V #PWR03
+U 1 1 618A6156
+P 3300 1000
+F 0 "#PWR03" H 3300 850 50  0001 C CNN
+F 1 "+5V" H 3315 1173 50  0000 C CNN
+F 2 "" H 3300 1000 50  0001 C CNN
+F 3 "" H 3300 1000 50  0001 C CNN
+	1    3300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1000 3300 1100
+$Comp
+L power:GND #PWR04
+U 1 1 618A6615
+P 3300 2600
+F 0 "#PWR04" H 3300 2350 50  0001 C CNN
+F 1 "GND" H 3305 2427 50  0000 C CNN
+F 2 "" H 3300 2600 50  0001 C CNN
+F 3 "" H 3300 2600 50  0001 C CNN
+	1    3300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2600 3300 2400
+$Comp
+L Device:R R1
+U 1 1 618A7653
+P 1550 1950
+F 0 "R1" H 1620 1996 50  0000 L CNN
+F 1 "330" H 1620 1905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 1480 1950 50  0001 C CNN
+F 3 "~" H 1550 1950 50  0001 C CNN
+	1    1550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 618A784A
+P 2250 1950
+F 0 "R2" H 2320 1996 50  0000 L CNN
+F 1 "3k3" H 2320 1905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 2180 1950 50  0001 C CNN
+F 3 "~" H 2250 1950 50  0001 C CNN
+	1    2250 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1800 1550 1600
+Wire Wire Line
+	1550 1600 1900 1600
+Wire Wire Line
+	2250 1600 2250 1800
+Wire Wire Line
+	1550 2950 1900 2950
+$Comp
+L power:GND #PWR02
+U 1 1 618AA8CF
+P 1900 3100
+F 0 "#PWR02" H 1900 2850 50  0001 C CNN
+F 1 "GND" H 1905 2927 50  0000 C CNN
+F 2 "" H 1900 3100 50  0001 C CNN
+F 3 "" H 1900 3100 50  0001 C CNN
+	1    1900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3100 1900 2950
+Connection ~ 1900 2950
+Wire Wire Line
+	1900 2950 2250 2950
+$Comp
+L power:+5V #PWR01
+U 1 1 618AB206
+P 1900 1350
+F 0 "#PWR01" H 1900 1200 50  0001 C CNN
+F 1 "+5V" H 1915 1523 50  0000 C CNN
+F 2 "" H 1900 1350 50  0001 C CNN
+F 3 "" H 1900 1350 50  0001 C CNN
+	1    1900 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1350 1900 1600
+Connection ~ 1900 1600
+Wire Wire Line
+	1900 1600 2250 1600
+Wire Wire Line
+	2250 2200 3000 2200
+Connection ~ 2250 2200
+Wire Wire Line
+	2250 2200 2250 2100
+Wire Wire Line
+	3300 1800 3300 1900
+Text GLabel 3450 1900 2    50   Output ~ 10
+SENSE
+Wire Wire Line
+	3450 1900 3300 1900
+Connection ~ 3300 1900
+Wire Wire Line
+	3300 1900 3300 2000
+Text GLabel 4250 2050 0    50   Input ~ 10
+SENSE
+Wire Wire Line
+	4250 2050 4600 2050
+Wire Wire Line
+	2250 2200 2250 2400
+Wire Wire Line
+	2250 2500 2250 2950
+$Comp
+L Connector:Conn_01x02_Male J-LED1
+U 1 1 618C41F5
+P 1350 2400
+F 0 "J-LED1" H 900 2300 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1100 2200 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 1350 2400 50  0001 C CNN
+F 3 "~" H 1350 2400 50  0001 C CNN
+	1    1350 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2500 1550 2950
+Wire Wire Line
+	1550 2100 1550 2400
+$Comp
+L Connector:Conn_01x02_Male J-PHOTO1
+U 1 1 618BF2BA
+P 2450 2500
+F 0 "J-PHOTO1" H 2450 2500 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 2450 2600 50  0000 R CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 2450 2500 50  0001 C CNN
+F 3 "~" H 2450 2500 50  0001 C CNN
+	1    2450 2500
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	650  700  650  3500
+Wire Notes Line
+	5100 3500 5100 700 
+Wire Notes Line
+	650  3500 5100 3500
+Wire Notes Line
+	650  700  5100 700 
+$EndSCHEMATC
